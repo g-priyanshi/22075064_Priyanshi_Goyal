@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{%block content%}
+<centre>
+    <h2>
+        Original URL:"{{obj.long_url}}"
+    </h2>
+    <h2>
+        Shortened URL : "http://127.0.0.1:8000/{{obj.short_url}}"
+    </h2>
+    <a href ="{{obj.long_url}}"><button type="button">Go to Website</button></a>
+</centre>
+{%endblock content%}
